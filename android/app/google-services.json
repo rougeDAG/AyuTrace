@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "957801456027",
+    "project_id": "ayutrace-6b147",
+    "storage_bucket": "ayutrace-6b147.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957801456027:android:dad704aee9323c463bc13e",
+        "android_client_info": {
+          "package_name": "com.ayutrace.ayutrace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk1mHy2osczm7OBCaMeY1lW4lYx37ayEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957801456027:android:ea0f0a7f91c99c403bc13e",
+        "android_client_info": {
+          "package_name": "com.ayutrace.ayutrace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk1mHy2osczm7OBCaMeY1lW4lYx37ayEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
