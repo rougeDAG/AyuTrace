@@ -75,7 +75,7 @@ Before running the project, make sure you have the following installed:
 
 > **Recommended:** Use a **physical Android or iOS device** for testing. Emulators often struggle with live Camera feeds and ML Kit processing.
 
----
+
 
 # Step 1: Clone the Repository & Install Dependencies
 
@@ -97,13 +97,13 @@ cd AyuTrace
 flutter pub get
 ```
 
----
+
 
 # Step 2: Connect the App to Firebase (Important)
 
 This project requires **Firebase** for authentication and backend services.
 
----
+
 
 ## 1. Create a Firebase Project
 
@@ -113,7 +113,7 @@ https://console.firebase.google.com/
 
 Create a new project.
 
----
+
 
 ## 2. Install Firebase CLI
 
@@ -135,7 +135,7 @@ Install FlutterFire CLI:
 dart pub global activate flutterfire_cli
 ```
 
----
+
 
 ## 3. Configure Firebase for the Flutter App
 
@@ -155,7 +155,6 @@ lib/firebase_options.dart
 
 This file connects your Flutter app to Firebase.
 
----
 
 ## 4. Enable Firebase Authentication
 
@@ -176,13 +175,13 @@ Email / Password
 
 > If this step is skipped, login attempts will fail.
 
----
+
 
 # Step 3: Configure Native Permissions
 
 Since this application uses **Camera** and **ML Kit**, native permissions must be configured.
 
----
+
 
 ## Android Configuration
 
@@ -202,7 +201,7 @@ defaultConfig {
 
 ML Kit requires at least **API level 21**.
 
----
+
 
 ## iOS Configuration
 
@@ -219,7 +218,7 @@ Add the following **before the closing `</dict>` tag**:
 <string>This app requires camera access for face detection.</string>
 ```
 
----
+
 
 # Step 4: Run the Application
 
@@ -231,7 +230,7 @@ flutter run
 
 The app should now build and launch successfully.
 
----
+
 
 # Project Features
 
@@ -241,7 +240,6 @@ The app should now build and launch successfully.
 - Cross-platform Flutter UI
 - Secure Firebase Backend
 
----
 
 ---
 
