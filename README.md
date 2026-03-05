@@ -63,7 +63,185 @@ To maintain a high-quality codebase, we strictly adhere to:
 <img width="200" alt="Screenshot_1772725624" src="https://github.com/user-attachments/assets/1986894e-f0cf-44d1-9300-a1974e5c3b5e" />
 <img width="200" alt="Screenshot_1772725627" src="https://github.com/user-attachments/assets/bf3d57d2-d74e-4d08-9fbe-cb57d5f85c71" />
 
+---
 
+## 🔧 Prerequisites and Running the Application 
+
+Before running the project, make sure you have the following installed:
+
+- **Flutter SDK**
+- **VS Code** or **Android Studio**
+- **Node.js and npm** (required for Firebase CLI)
+
+> **Recommended:** Use a **physical Android or iOS device** for testing. Emulators often struggle with live Camera feeds and ML Kit processing.
+
+---
+
+# Step 1: Clone the Repository & Install Dependencies
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/rougeDAG/AyuTrace.git
+```
+
+### 2. Navigate into the project directory
+
+```bash
+cd AyuTrace
+```
+
+### 3. Install dependencies
+
+```bash
+flutter pub get
+```
+
+---
+
+# Step 2: Connect the App to Firebase (Important)
+
+This project requires **Firebase** for authentication and backend services.
+
+---
+
+## 1. Create a Firebase Project
+
+Go to the Firebase Console:
+
+https://console.firebase.google.com/
+
+Create a new project.
+
+---
+
+## 2. Install Firebase CLI
+
+Install Firebase tools globally:
+
+```bash
+npm install -g firebase-tools
+```
+
+Login to Firebase:
+
+```bash
+firebase login
+```
+
+Install FlutterFire CLI:
+
+```bash
+dart pub global activate flutterfire_cli
+```
+
+---
+
+## 3. Configure Firebase for the Flutter App
+
+Inside your project directory, run:
+
+```bash
+flutterfire configure
+```
+
+Follow the prompts and select the Firebase project you created.
+
+> This command generates the file:
+
+```
+lib/firebase_options.dart
+```
+
+This file connects your Flutter app to Firebase.
+
+---
+
+## 4. Enable Firebase Authentication
+
+1. Go to **Firebase Console**
+2. Navigate to:
+
+```
+Build → Authentication → Sign-in Method
+```
+
+3. Enable:
+
+```
+Email / Password
+```
+
+4. Click **Save**
+
+> If this step is skipped, login attempts will fail.
+
+---
+
+# Step 3: Configure Native Permissions
+
+Since this application uses **Camera** and **ML Kit**, native permissions must be configured.
+
+---
+
+## Android Configuration
+
+Open:
+
+```
+android/app/build.gradle
+```
+
+Ensure the **minimum SDK version is 21 or higher**.
+
+```gradle
+defaultConfig {
+    minSdkVersion 21
+}
+```
+
+ML Kit requires at least **API level 21**.
+
+---
+
+## iOS Configuration
+
+Open:
+
+```
+ios/Runner/Info.plist
+```
+
+Add the following **before the closing `</dict>` tag**:
+
+```xml
+<key>NSCameraUsageDescription</key>
+<string>This app requires camera access for face detection.</string>
+```
+
+---
+
+# Step 4: Run the Application
+
+Connect your physical device or start an emulator and run:
+
+```bash
+flutter run
+```
+
+The app should now build and launch successfully.
+
+---
+
+# Project Features
+
+- Firebase Authentication
+- Face Detection using Google ML Kit
+- Camera Integration
+- Cross-platform Flutter UI
+- Secure Firebase Backend
+
+---
 
 ---
 
