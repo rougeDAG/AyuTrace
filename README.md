@@ -1,6 +1,7 @@
 # AyuTrace: The Transparent Ayurvedic Ecosystem
 
 **Apps built to abholish the uncertainty in Ayurvedic medicine through "Farm-to-Bottle" traceability.**
+**Built with my friends Hari Sri Prasad, Joseph, Vaishnavi, [Krithik ](https://github.com/KrithikRaghavendar), Mithiiren , and [Raagul](https://github.com/RaagulG865)**
 
 Ayurvedic medicine often suffers from a "black box" manufacturing process, leading to a lack of trust among modern consumers regarding purity, sourcing, and potency. **AyuTrace** is an integrated system designed to bring absolute transparency to the Ayurvedic nutraceutical chain, ensuring that every tablet's journey—from the field to the patient—is explicit and verifiable.
 
